@@ -1,0 +1,63 @@
+#start program
+
+#input section
+
+	#set up variable name equal to user input
+	#set up variable answer1 to user input
+	#set up variable answer2 to user input
+	#set up variable answer3 to user input
+	#set up variable answer4 to user input
+	#set up variable answer5 to user input
+
+#processing section
+
+	#if answer5 == "y" then set up variable answer6 and set it equal to user input, print "The following are the tricks you listed: " + answer6
+	#if answer1 == "y" and answer2 == "y" and answer5 == "y" print a new line and "Congratulations you made the team!"
+	#elif answer1 == "y" and answer2 == "y" print a new line and "Congratulations you made the team!"
+	#elif answer1 == "n" or answer2 == "n" print a new line and "Unfortunately you did not make the team."
+
+#output section
+
+	#display "This is the GEMS Dance club!" and start a new line
+	#display name + ", thank you for answering the application questions!" and start a new line
+	#display "Your application replies are:"
+	#display "Can you do two or more turns? " + answer1
+	#display "Do you have both your splits and stradle? " + answer2
+	#display "How many years have you danced for? " + answer3
+	#display "What grade are you in? " + answer4
+	#display "Can you do any special tricks? " + answer5
+
+#eop
+
+#Monique Alfonso, 8-20-20, des- this program prompts the user and uses their response to see if they made it into the team
+
+def main():
+
+	print("This is the GEMS Dance club!\n")
+	name = input("Enter your name:")
+	print(name + ", thank you for answering the application questions!\n")
+	print("Your application replies are:")
+	answer1 = input("Can you do two or more turns? y/n")
+	answer2 = input("Do you have both your splits and stradle? y/n")
+	answer3 = input("How many years have you danced for?")
+	answer4 = input("What grade are you in?")
+	answer5 = input("Can you do any special tricks? y/n")
+	print("Can you do two or more turns? " + answer1)
+	print("Do you have both your splits and stradle? " + answer2)
+	print("How many years have you danced for? " + answer3)
+	print("What grade are you in? " + answer4)
+	print("Can you do any special tricks? " + answer5)
+	
+	if(answer5 == "y"):
+		answer6 = input("Name The tricks:")
+		print("The following are the tricks you listed: " + answer6)
+		
+	if(answer1 == "y" and answer2 == "y" and answer5 == "y"):
+		print("\nCongratulations you made the team!")
+	elif(answer1 == "y" and answer2 == "y"):
+		print("\nCongratulations you made the team!")
+	elif(answer1 == "n" or answer2 == "n"):
+		print("\nUnfortunately you did not make the team.")
+	
+
+main()
